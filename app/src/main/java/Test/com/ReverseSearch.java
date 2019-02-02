@@ -18,13 +18,15 @@ public class ReverseSearch extends AppCompatActivity {
             TextView partNameTextView = (TextView) findViewById(R.id.partNameTextView);
             TextView partInfoTextView = (TextView) findViewById(R.id.partInfoTextView);
 
-            String partNum = getIntent().getExtras().getString("test.com.holder");
-            int partNumInt = Integer.parseInt(partNum);
+            int partNumInt = getIntent().getExtras().getInt("test.com.holder");
             int numItems = 6; ///////////////////////////////////////////////////////////////////
+
+            //Fixes nums = "" and ones that are to big
+
 
 
             if(partNumInt < numItems) {
-                partNumTextView.setText("Part Number: " + partNum);
+                partNumTextView.setText("Part Number: " + partNumInt);
 
                 partNameTextView.setText(Database.getName(partNumInt));
                 partInfoTextView.setText(Database.getInfo(partNumInt));
