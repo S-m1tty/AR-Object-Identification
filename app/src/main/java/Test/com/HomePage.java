@@ -3,6 +3,7 @@ package Test.com;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -31,12 +32,28 @@ public class HomePage extends AppCompatActivity {
                 String partNumString = partNumEditText.getText().toString();
                 int partNumInt;
 
+                Resources res = getResources();
+                int totItems = res.getInteger(R.integer.totalItems);
+
                 //Prevents and invalid number from being used ie "" and "Int overflows"
                 try {
                     partNumInt = Integer.parseInt(partNumString);
-                    Intent startIntent = new Intent(getApplicationContext(), ReverseSearch.class);
-                    startIntent.putExtra("test.com.holder",  + partNumInt);
-                    startActivity(startIntent);
+                    if(partNumInt < totItems )
+                    {
+                        Intent startIntent = new Intent(getApplicationContext(), ReverseSearch.class);
+                        startIntent.putExtra("test.com.holder",  + partNumInt);
+                        startActivity(startIntent);
+                    }
+                    else
+                    {
+                        Toast toast = Toast.makeText(getApplicationContext(),
+                                "Current Number Does Not Have Item In Database",
+                                Toast.LENGTH_SHORT);
+
+                        toast.setGravity(Gravity.CENTER, 0, 20);
+                        toast.show();
+                    }
+
                 }catch (Exception e) {
                     if (partNumString.equals("")) {
                         Toast toast = Toast.makeText(getApplicationContext(),

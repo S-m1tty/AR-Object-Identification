@@ -2,6 +2,7 @@ package Test.com;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -12,6 +13,9 @@ public class ReverseSearch extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reverse_search);
 
+        Resources res = getResources();
+        int totItems = res.getInteger(R.integer.totalItems);
+
 
         if(getIntent().hasExtra("test.com.holder")) {
             TextView partNumTextView = (TextView) findViewById(R.id.partNumTextView);
@@ -19,10 +23,7 @@ public class ReverseSearch extends AppCompatActivity {
             TextView partInfoTextView = (TextView) findViewById(R.id.partInfoTextView);
 
             int partNumInt = getIntent().getExtras().getInt("test.com.holder");
-            int numItems = 6; ///////////////////////////////////////////////////////////////////
-
-            //Fixes nums = "" and ones that are to big
-
+            int numItems = totItems;
 
 
             if(partNumInt < numItems) {
