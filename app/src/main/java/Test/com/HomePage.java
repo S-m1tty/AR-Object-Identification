@@ -35,10 +35,9 @@ public class HomePage extends AppCompatActivity {
                 try {
                     partNumInt = Integer.parseInt(partNumString);
                     Intent startIntent = new Intent(getApplicationContext(), ReverseSearch.class);
-                    startIntent.putExtra("test.com.holder", "" + partNumInt);
+                    startIntent.putExtra("test.com.holder",  + partNumInt);
                     startActivity(startIntent);
                 }catch (Exception e) {
-                    partNumInt = -1;
                     if (partNumString.equals("")) {
                         Toast toast = Toast.makeText(getApplicationContext(),
                                 "Please Enter a Number",
