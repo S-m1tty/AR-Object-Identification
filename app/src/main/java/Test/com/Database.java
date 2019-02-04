@@ -1,4 +1,7 @@
 package Test.com;
+
+import java.util.Arrays;
+
 /*
 Easy access to all the items
 Will be change in future
@@ -30,4 +33,16 @@ public class Database
                 //jeff[5] is just for kicks and giggles
         return jeff[a];
     }
+    public static int getImg(int a)
+    {
+        int jeff[] = new int[6];
+        Arrays.fill(jeff, R.drawable.kirbster);
+        jeff[0] = R.drawable.img0;
+        jeff[1] = R.drawable.img1;
+        jeff[2] = R.drawable.img2;
+        //Do more for more items
+
+        return jeff[a];
+    }
+
 }

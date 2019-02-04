@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ReverseSearch extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class ReverseSearch extends AppCompatActivity {
 
         Resources res = getResources();
         int totItems = res.getInteger(R.integer.totalItems);
+        ImageView itemImageImageView = (ImageView) findViewById(R.id.itemImageImageView);
 
 
         if(getIntent().hasExtra("test.com.holder")) {
@@ -31,6 +33,8 @@ public class ReverseSearch extends AppCompatActivity {
 
                 partNameTextView.setText(Database.getName(partNumInt));
                 partInfoTextView.setText(Database.getInfo(partNumInt));
+
+                itemImageImageView.setImageResource(Database.getImg(partNumInt));
             }
         }
     }
