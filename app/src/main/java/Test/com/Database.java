@@ -25,14 +25,15 @@ public class Database
     public static String getInfo(int a)
     {
         String jeff[] = new String[6];
-        String h = "How to use:\n\n";
+        String h = "Instructions:\n\n";
+        String h2 = "\n\n\nDescription:\n\n";
 
         jeff[0] = "Please Retry Image Search";
-        jeff[1] = h + "1.) Firmly grasp hammer in one hand\n2.) Swing so that the metal part hits the intended object\n3.) Repeat first two steps until satisfied";
-        jeff[2] = h + "1.) Hold the screwdriver\n2.) Place the notch in the screw\n3.) Turn counterclockwise to loosen the bolt/nut";
-        jeff[3] = h + "1.) Grab wrench in one hand\n2.) Fit nut in the notch\n3.) Turn counterclockwise to loosen the bolt/nut";
-        jeff[4] = "Breadies";
-        jeff[5] = "Eggies";
+        jeff[1] = h + "1.) Firmly grasp hammer in one hand\n2.) Swing so that the metal part hits the intended object\n3.) Repeat first two steps until satisfied" + h2 + "A tool intended to help put nails into objects such as wood. It has a long handle, and a tip with a flat end for hitting nails. Some hammers have a curved end to assist with removing nails";
+        jeff[2] = h + "1.) Hold the screwdriver\n2.) Place the notch in the screw\n3.) Turn counterclockwise to loosen the bolt/nut" + h2 + "A tool, manual or powered, intended to assist in the action of inserting and removing screws.  Usually consisting of a handle and a shaft, different types of screw drivers have different tips, most notably the flathead(-) and philips(+)";
+        jeff[3] = h + "1.) Grab wrench in one hand\n2.) Fit nut in the notch\n3.) Turn counterclockwise to loosen the bolt/nut" + h2 + "A tool designed to provide grip and a mechanical advantage in applying torque to turn objects, such as nuts and bolts.";
+        jeff[4] = h + "1.) Insert into mouth\n2.) Enjoy" + h2 + "Bread is a staple in many diets across the globe.  It provides the carbohydrates we need to live so it is very important.";
+        jeff[5] = h + "1.) Insert into mouth\n2.) Enjoy" + h2 + "Eggs are a staple in many diets across the globe.  It provides the protein we need to live so it is very important.";
 
         return jeff[a];
     }
