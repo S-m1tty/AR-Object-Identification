@@ -33,7 +33,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
 
     //Tensor Flow Stuff
-    compile 'org.tensorflow:tensorflow-lite:+'
-    compile 'com.android.support:support-v13:+' //v13
+    api 'org.tensorflow:tensorflow-lite:+'             //changed compile to api
+    api 'com.android.support:support-v13:+' //v13   //changed compile to api
 
 }
