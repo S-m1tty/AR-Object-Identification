@@ -11,7 +11,7 @@ public class Database
     public static String getName(int a)
     {
         String jeff[] = new String[6];
-        jeff[0] = "Unrecognised Object";
+        jeff[0] = "Unrecognized Object";
         jeff[1] = "Hammer";
         jeff[2] = "Screwdriver";
         jeff[3] = "Wrench";
@@ -47,6 +47,8 @@ public class Database
         jeff[1] = R.drawable.img1;
         jeff[2] = R.drawable.img2;
         jeff[3] = R.drawable.img3;
+        jeff[4] = R.drawable.img4;
+        jeff[5] = R.drawable.img5;
 
         //Do more for more items
 
