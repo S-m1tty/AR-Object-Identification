@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">AR ID TOOL</string>
-    <integer name="totalItems">6</integer>
+    <integer name="totalItems">10</integer>
 </resources>
