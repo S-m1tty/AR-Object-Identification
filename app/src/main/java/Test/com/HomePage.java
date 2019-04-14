@@ -83,8 +83,11 @@ public class HomePage extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), CameraSearch.class);
-                startActivity(startIntent);
+                //com.example.android.tflitecamerademo //APK
+                Intent tfLite = getPackageManager().getLaunchIntentForPackage("android.example.com.tflitecamerademo");
+                startActivity(tfLite);
+                //Intent startIntent = new Intent(getApplicationContext(), CameraSearch.class);
+                //startActivity(startIntent);
             }
         });
 
