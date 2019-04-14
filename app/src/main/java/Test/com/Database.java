@@ -1,5 +1,6 @@
 package Test.com;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /*
@@ -72,4 +73,44 @@ public class Database
         return jeff[a];
     }
 
+    //sp is special
+    //special is for more spefic parts ie.) screwdriver vs flathead and philips
+    public static ArrayList<String> sp(int a)
+    {
+        ArrayList<String> jeff[] = new ArrayList[10];
+
+        jeff[0] = new ArrayList<>(Arrays.asList("null"));
+
+        Arrays.fill(jeff, jeff[0]);
+
+        jeff[2] = new ArrayList<>(Arrays.asList("Flathead", "Phillips", "Star"));
+        jeff[5] = new ArrayList<>(Arrays.asList("Scrambled", "Hard Boiled"));
+        return jeff[a];
+    }
+
+    public static ArrayList<String> spInfo(int a)
+    {
+        ArrayList<String> jeff[] = new ArrayList[10];
+
+        jeff[0] = new ArrayList<>(Arrays.asList("null"));
+
+        Arrays.fill(jeff, jeff[0]);
+
+        jeff[2] = new ArrayList<>(Arrays.asList("Flathead", "Phillips", "Star"));
+        jeff[5] = new ArrayList<>(Arrays.asList("Scrambled", "Hard Boiled"));
+        return jeff[a];
+    }
+
+    public static ArrayList<Integer> spImg(int a)
+    {
+        ArrayList<Integer> jeff[] = new ArrayList[10];
+
+        jeff[0] = new ArrayList<>(Arrays.asList(R.drawable.question_mark));
+
+        Arrays.fill(jeff, jeff[0]);
+
+        jeff[2] = new ArrayList<>(Arrays.asList(R.drawable.spimg2_1,R.drawable.spimg2_2,R.drawable.spimg2_3));
+        jeff[5] = new ArrayList<>(Arrays.asList(R.drawable.spimg5_1,R.drawable.spimg5_2));
+        return jeff[a];
+    }
 }

@@ -78,6 +78,31 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/itemImageImageView"
                 app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:id="@+id/itemTypeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/itemType1Btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="itemType1Btn" />
+
+                <Button
+                    android:id="@+id/itemType2Btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="itemType2Btn" />
+
+                <Button
+                    android:id="@+id/itemType3Btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="itemType3Btn" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
