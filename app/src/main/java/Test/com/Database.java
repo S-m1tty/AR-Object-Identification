@@ -7,6 +7,8 @@ import java.util.Arrays;
 Easy access to all the items
 Will be change in future
 */
+
+
 public class Database
 {
     public static String getName(int a)
@@ -18,7 +20,7 @@ public class Database
         jeff[3] = "Wrench";
         jeff[4] = "Bread";
         jeff[5] = "Egg";
-        jeff[6] = "Fountain Pen";
+        jeff[6] = "Pen";
         jeff[7] = "Keyboard";
         jeff[8] = "Cowboy Hat";
         jeff[9] = "Cowboy Boot";
@@ -40,11 +42,10 @@ public class Database
         jeff[3] = h + "1.) Grab wrench in one hand\n2.) Fit nut in the notch\n3.) Turn counterclockwise to loosen the bolt/nut" + h2 + "A tool designed to provide grip and a mechanical advantage in applying torque to turn objects, such as nuts and bolts.";
         jeff[4] = h + "1.) Insert into mouth\n2.) Enjoy" + h2 + "Bread is a staple in many diets across the globe.  It provides the carbohydrates we need to live so it is very important.";
         jeff[5] = h + "1.) Insert into mouth\n2.) Enjoy" + h2 + "Eggs are a staple in many diets across the globe.  It provides the protein we need to live so it is very important.";
-        //5
-        //6
-        //7
+        jeff[6] = h + "1.) Press tip on paper\n2.) Move pen against paper" + h2 + "A pen is a writing instrument used to apply ink to a surface, usually paper, for writing or drawing.";
+        jeff[7] = h + "1.) Press key\n2.) Letter appears on screen" + h2 + "A computer keyboard is an input device used to enter characters and functions into the computer system by pressing buttons, or keys.";
         jeff[8] = h + "1.) Say hi to Mr. Johnson\n2.) Complement his hat\n3.) We like your hat Mr. Johnson" + h2 + "The cowboy hat is a high-crowned, wide-brimmed hat best known as the defining piece of attire for the North American cowboy. ... The shape of a cowboy hat's crown and brim are often modified by the wearer for fashion and to protect against weather.";
-        //9
+        jeff[9] = h + "1.) Put left boot on left foot\n2.) Put right boot on right foot\n3.) Yee Haw" + h2 + "Cowboy boots refer to a specific style of riding boot, historically worn by cowboys. They have a Cuban heel, rounded to pointed toe, high shaft, and, traditionally, no lacing.";
         //ect...
 
 
@@ -74,7 +75,7 @@ public class Database
     }
 
     //sp is special
-    //special is for more spefic parts ie.) screwdriver vs flathead and philips
+    //special is for more specific parts ie.) screwdriver vs flathead and philips
     public static ArrayList<String> sp(int a)
     {
         ArrayList<String> jeff[] = new ArrayList[10];
@@ -96,8 +97,8 @@ public class Database
 
         Arrays.fill(jeff, jeff[0]);
 
-        jeff[2] = new ArrayList<>(Arrays.asList("Flathead", "Phillips", "Star"));
-        jeff[5] = new ArrayList<>(Arrays.asList("Scrambled", "Hard Boiled"));
+        jeff[2] = new ArrayList<>(Arrays.asList("Instructions:\n\n1.) Hold the screwdriver\n2.) Place the notch in the screw\n3.) Turn counterclockwise to loosen the bolt/nut \n\n\nDescription:\n\nA screwdriver with a single (-) shaped notch used for screws, manual or powered, intended to assist in the action of inserting and removing screws.  Usually consisting of a handle and a shaft.", "Instructions:\n\n1.) Hold the screwdriver\n2.) Place the notch in the screw\n3.) Turn counterclockwise to loosen the bolt/nut \n\n\nDescription:\n\nA screwdriver with a single (+) shaped notch used for screws, manual or powered, intended to assist in the action of inserting and removing screws.  Usually consisting of a handle and a shaft.", "Instructions:\n\n1.) Hold the screwdriver\n2.) Place the notch in the screw\n3.) Turn counterclockwise to loosen the bolt/nut \n\n\nDescription:\n\nA screwdriver with a single (*) shaped notch used for screws, manual or powered, intended to assist in the action of inserting and removing screws.  Usually consisting of a handle and a shaft."));
+        jeff[5] = new ArrayList<>(Arrays.asList("Instructions:\n\n1.) Crack egg onto hot pan\n2.) Stir and let cook to desired consistency\n3.)Enjoy! \n\n\nDescription:\n\nScrambled Eggs are eggs beaten slightly usually with a little milk and stirred while cooking.  Eggs are a staple in many diets across the globe.  It provides the protein we need to live so it is very important.", "Instructions:\n\n1.) Place egg in pot of water\n2.) Boil water and wait 10 minutes\n3.)Enjoy! \n\n\nDescription:\n\nBoiled Eggs are eggs, surprisingly, boiled in a pot of water.  Eggs are a staple in many diets across the globe.  It provides the protein we need to live so it is very important."));
         return jeff[a];
     }
 
